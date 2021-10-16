@@ -1,0 +1,50 @@
+/* Наша команда */
+.section-command {
+  background-color: var(--background-color-man-section);
+}
+.mans {
+  display: flex;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  & > li + li {
+    margin-left: 30px;
+  }
+  &__img {
+    display: block;
+  }
+  &__item {
+    width: 270px;
+
+    background-color: var(--background-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+}
+
+.man-card {
+  padding: 30px 32px;
+  &__name {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    color: var(--title--color);
+  }
+  &__profession {
+    margin-bottom: 16px;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__link {
+    fill: var(--icon-color);
+  }
+  &__link:hover,
+  &__link:focus {
+    fill: var(--background-color);
+    background-color: var(--accent-color);
+  }
+}
